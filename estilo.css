@@ -3,16 +3,63 @@
   src: url("Blacklettersh.ttf");
 }
 
+@font-face {
+  font-family: chomsky;
+  src: url("Chomsky.otf");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(0, 0, 0);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+  min-height: 100vh;
 }
 
 h1 {
   color: rgba(239, 11, 11, 0.974);
   font-size: 6em;
   font-family: gothic;
-  margin-bottom: 0rem;
+}
+
+button{
+  font-family: chomsky;
+  font-size: 1.7rem;
+  border-radius: 10px;
+  color: red;
+  cursor: pointer;
+  padding: 0 0.4rem;
+  background-color: black;
+  border: 2px solid red
+}
+
+button:hover{
+  background-color: red;
+  color: white
+}
+
+iframe{
+  border: 1px solid red;
+  border-radius: 20px;
+}
+
+.space-taker{
+  flex: 1
+}
+
+footer{
+  font-family: chomsky;
+  color: rgba(239, 11, 11, 0.974);
+  font-size: 1.4rem
 }
 
 @media only screen and (max-width: 600px) {
