@@ -49,24 +49,33 @@ button:hover{
 
 iframe{
   border-radius: 20px;
+  width: 450px;
+  height: 320px;
 }
 
 .space-taker{
-  flex: 1
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer{
   font-family: chomsky;
   color: rgba(239, 11, 11, 0.974);
-  font-size: 1.4rem
+  font-size: 2rem
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   iframe {
-    width: 300px;
-    height: 200px;
+    margin-top: 1rem;
+    width: 400px;
+    height: 300px;
+  }
+  footer{
+    font-size: 1.8rem
   }
 }

@@ -10,15 +10,15 @@ function mostrar() {
   let diferenciaAnoActual = 0;
 
   //bienvendia
-  alert("Sacrificial Suicide 💀🤙 Castill0.666. Derechos Reservados. @2023.");
+  alert("Sacrificial Suicide 💀🤙. Castill0.666. Derechos Reservados. @2023.");
 
   //inputs
   do {
-    ndia = prompt("Ingrese el dia de nacimiento 👼🏾");
+    ndia = prompt("Ingrese el día de nacimiento 👼🏾(1-31)");
   } while (ndia < 1 || ndia > 31 || isNaN(ndia));
 
   do {
-    nmes = parseInt(prompt("Ingrese el mes de nacimiento 👼🏽"));
+    nmes = parseInt(prompt("Ingrese el mes de nacimiento 👼🏽(1-12)"));
   } while (nmes < 1 || nmes > 12 || isNaN(nmes));
 
   do {
@@ -47,9 +47,8 @@ function mostrar() {
   }
 
   //outputs
-
   edadEnDias = edad * 365.24189;
-  edadEnDias = Math.ceil(edadEnDias);
+  edadEnDias = Math.floor(edadEnDias);
   sumaDias = edadEnDias + diferenciaAnoActual + diferenciaAnoPasado;
   alert("Usted lleva " + sumaDias + " dias en la tierra, matese 🧨💀🤙");
 }
