@@ -50,5 +50,5 @@ function mostrar() {
   edadEnDias = edad * 365.24189;
   edadEnDias = Math.floor(edadEnDias);
   sumaDias = edadEnDias + diferenciaAnoActual + diferenciaAnoPasado;
-  alert("Tenés " + sumaDias + " dias en la tierra, activa eso por favor!! 🚀✍️");
+  alert("Tenés " + sumaDias + " dias en la tierra, haga algo!! 🚀✍️");
 }
