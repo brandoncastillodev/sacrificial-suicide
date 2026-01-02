@@ -14,28 +14,28 @@ function mostrar() {
 
   //inputs
   do {
-    ndia = prompt("Ingrese el día de nacimiento 👼🏾(1-31)");
+    ndia = prompt("Ingresá tu día de nacimiento, del 1 al 31 👼🏾");
   } while (ndia < 1 || ndia > 31 || isNaN(ndia));
 
   do {
-    nmes = parseInt(prompt("Ingrese el mes de nacimiento 👼🏽(1-12)"));
+    nmes = parseInt(prompt("Ingresá tu mes de nacimiento, del 1 al 12 👼🏽"));
   } while (nmes < 1 || nmes > 12 || isNaN(nmes));
 
   do {
-    edad = parseInt(prompt("Ingrese su edad 🤬"));
+    edad = parseInt(prompt("Ingresá tu edad 😃"));
   } while (edad < 0 || edad > 100 || isNaN(edad));
 
   do {
-    bandera = prompt("Los ha cumplido este año? 🥴(s/n)");
+    bandera = prompt("Los ha cumplido este año? s/n 😜");
     bandera = bandera.toLowerCase();
   } while (bandera != "s" && bandera != "n");
 
   do {
-    fmes = parseInt(prompt("Ingrese el mes actual ✡️(1-12)"));
+    fmes = parseInt(prompt("Ingresá el mes actual, del 1 al 12 ✡️"));
   } while (fmes < 1 || fmes > 12 || isNaN(fmes));
 
   do {
-    fdia = parseInt(prompt("Ingrese el dia actual 🐺(01-31)"));
+    fdia = parseInt(prompt("Ingresá el dia actual, del 1 al 31 ☀️"));
   } while (fdia < 1 || fdia > 31 || isNaN(fdia));
 
   //procesamientos
@@ -50,5 +50,5 @@ function mostrar() {
   edadEnDias = edad * 365.24189;
   edadEnDias = Math.floor(edadEnDias);
   sumaDias = edadEnDias + diferenciaAnoActual + diferenciaAnoPasado;
-  alert("Usted lleva " + sumaDias + " dias en la tierra, matese 🧨💀🤙");
+  alert("Tenés " + sumaDias + " dias en la tierra, activa eso por favor!! 🚀✍️");
 }
