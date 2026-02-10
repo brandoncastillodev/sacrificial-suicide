@@ -1,11 +1,4 @@
-
-
 function mostrar() {
-  // play music
-  const iframe = document.querySelector('.video');
-  const newSrc = iframe.src.replace('autoplay=1', '');
-  iframe.src = newSrc + (newSrc.includes('?') ? '&' : '?') + 'autoplay=1';
-
   let sumaDias = 0;
   let edad = 0;
   let edadEnDias = 0;
