@@ -66,6 +66,17 @@ footer{
   font-size: 2rem
 }
 
+a{
+  color: rgba(239, 11, 11, 0.974);
+  text-decoration: none;
+  text-transform: none
+}
+
+a:hover{
+  text-decoration: none;
+  text-transform: none;
+}
+
 @media only screen and (max-width: 700px) {
   h1 {
     font-size: 3.5rem;
