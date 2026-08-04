@@ -13,29 +13,40 @@ function mostrar() {
   alert("Sacrificial Suicide 💀🤙. Castill0.666. Derechos Reservados. @2023.");
 
   //inputs
+  function preguntar(mensaje, entero) {
+    const valor = prompt(mensaje);
+    if (valor === null) return null;
+    return entero ? parseInt(valor) : valor.toLowerCase();
+  }
+
   do {
-    ndia = prompt("Ingresá tu día de nacimiento, del 1 al 31 👼🏾");
+    ndia = preguntar("Ingresá tu día de nacimiento, del 1 al 31 👼🏾", true);
+    if (ndia === null) return;
   } while (ndia < 1 || ndia > 31 || isNaN(ndia));
 
   do {
-    nmes = parseInt(prompt("Ingresá tu mes de nacimiento, del 1 al 12 👼🏽"));
+    nmes = preguntar("Ingresá tu mes de nacimiento, del 1 al 12 👼🏽", true);
+    if (nmes === null) return;
   } while (nmes < 1 || nmes > 12 || isNaN(nmes));
 
   do {
-    edad = parseInt(prompt("Ingresá tu edad 😃"));
+    edad = preguntar("Ingresá tu edad 😃", true);
+    if (edad === null) return;
   } while (edad < 0 || edad > 100 || isNaN(edad));
 
   do {
-    bandera = prompt("Los ha cumplido este año? s/n 😜");
-    bandera = bandera.toLowerCase();
+    bandera = preguntar("Los ha cumplido este año? s/n 😜");
+    if (bandera === null) return;
   } while (bandera != "s" && bandera != "n");
 
   do {
-    fmes = parseInt(prompt("Ingresá el mes actual, del 1 al 12 ✡️"));
+    fmes = preguntar("Ingresá el mes actual, del 1 al 12 ✡️", true);
+    if (fmes === null) return;
   } while (fmes < 1 || fmes > 12 || isNaN(fmes));
 
   do {
-    fdia = parseInt(prompt("Ingresá el dia actual, del 1 al 31 ☀️"));
+    fdia = preguntar("Ingresá el dia actual, del 1 al 31 ☀️", true);
+    if (fdia === null) return;
   } while (fdia < 1 || fdia > 31 || isNaN(fdia));
 
   //procesamientos
@@ -50,5 +61,5 @@ function mostrar() {
   edadEnDias = edad * 365.24189;
   edadEnDias = Math.floor(edadEnDias);
   sumaDias = edadEnDias + diferenciaAnoActual + diferenciaAnoPasado;
-  alert("Tenés " + sumaDias + " dias en la tierra, haga algo!! 🚀✍️");
+  alert("Tenés " + sumaDias + " dias en la tierra 🚀✍️");
 }

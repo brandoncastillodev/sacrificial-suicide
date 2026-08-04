@@ -48,13 +48,16 @@ button:hover{
 }
 
 iframe{
-  border-radius: 20px;
-  width: 450px;
-  height: 320px;
+  border: none;
+  width: min(55vw, 680px);
+  height: auto;
+  aspect-ratio: 7 / 5;
+  margin: 2rem 1rem;
 }
 
 .space-taker{
   flex: 1;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,10 +84,13 @@ a:hover{
   h1 {
     font-size: 3.5rem;
   }
+  button {
+    margin-top: 2rem;
+  }
   iframe {
-    margin-top: 1rem;
-    width: 400px;
-    height: 300px;
+    width: 100%;
+    max-width: none;
+    margin: 2rem 0;
   }
   footer{
     font-size: 1.8rem
