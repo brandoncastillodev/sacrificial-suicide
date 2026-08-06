@@ -39,7 +39,9 @@ button{
   cursor: pointer;
   padding: 0 0.4rem;
   background-color: black;
-  border: 2px solid red
+  border: 2px solid red;
+  position: relative;
+  z-index: 10;
 }
 
 button:hover{
@@ -61,6 +63,7 @@ iframe{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 }
 
 footer{
