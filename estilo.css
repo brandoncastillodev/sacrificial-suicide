@@ -58,7 +58,6 @@ iframe{
 }
 
 .space-taker{
-  flex: 1;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -93,7 +92,7 @@ a:hover{
     font-size: 3.5rem;
   }
   button {
-    margin-top: 2rem;
+    margin-top: 0;
   }
   iframe {
     width: 100%;
